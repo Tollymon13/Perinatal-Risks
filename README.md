@@ -1,5 +1,4 @@
 # Understanding the Data set
-=============
 
 From some early analysis, it can be concluded that the data set presents Perinatal Risks for
 women, given their Age, Systolic/Diastolic Blood Pressure, Blood Sugar, Heart Rate and the
@@ -18,7 +17,8 @@ the specified range. Regression does not normalise its values in between [0, 1] 
 were to do that, the result will not be as expected (i.e. the outputs of the linear regression are
 not probabilities).
 
-#Data Exploration
+# Data Exploration
+
 I have explored the test and training sets using pair plots. Both are essentially coming from the
 same data set, so all the distributions are somewhat similar. Besides the pair plots that show
 similar distributions, I have also looked at the outliers from the training set using box plots. I
@@ -46,7 +46,7 @@ as 7, which looks like a misread). I have done this for the training set, but no
 because I might end up overfitting the data set by modifying it to my needs,
 Algorithm Selection and Application
 
-#Random Forest
+# Random Forest
 Random Forests are a collection of Decision Trees. This is because the decision trees are weak
 learners by themselves, but a random forest represents an "ensemble", meaning that together
 with the other decision trees combined it becomes much more powerful (and with a lower
@@ -75,7 +75,7 @@ has information on the distribution of data.
 overfitting). A deep tree might overfit the data, as it will try to keep splitting on various
 predictors until it reaches the leaf nodes (but sometimes this is not efficient).
 
-#Support Vector Machines
+# Support Vector Machines
 They have been popular since the 1990s, and dominated the field of Artificial Intelligence for a
 while. It is also sometimes known as one of the best classifiers that does not require that much
 tuning. Support Vector Machines (SVM) is essentially a generalisation of the maximal margin
@@ -115,7 +115,7 @@ validation, we use the test set to check the actual accuracy of the model. This 
 model k times, before we test it on the actual test data. The approach is applied to select the
 best hyperparameters for the two models.
 
-#Model Evaluation
+# Model Evaluation
 The confusion matrix helps with seeing beyond “accuracy”, as if one was to only use that as a
 metric, then it could possibly end up in misleading results. If we were to use a confusion matrix,
 that uses True Positives (number of correctly predicted positive values), False Negatives
@@ -153,7 +153,7 @@ similar outputs, meaning that the either choice would have been a good one. The 
 this is because both are robust methods that work well in multi-class, multi-feature
 environments.
 
-#Ethics
+# Ethics
 Using Machine Learning in Health Care might have a lot of good and bad consequences.
 Mainly, there will be concerns around how accurate the predictions of the models are. Also, one
 must consider what decisions will be made based on the predictions. This includes treatments
@@ -168,7 +168,7 @@ decisions without questions. This can lead to extremely bad decisions, where peo
 be affected permanently. One must always consider the implications of using the machine
 learning model, and the possible flaws within the system.
 
-#Reference
+# Reference
 James, G. et al. (2015) An introduction to statistical learning: With applications in R.
 supervised learning scikit. Available at: https://scikit-learn.org/stable/supervised_learning.html
 (Accessed: 20 October 2024).
